@@ -1,0 +1,125 @@
+body {
+    background-image: url(./../images/caveBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+
+    
+}
+
+.cave-border {
+    background-image: url(./../images/caveBorder.png);
+    background-repeat: repeat; 
+    background-size: contain;
+    z-index: 0;
+    height: 100%;
+    width: 100%; 
+    position: fixed;
+}
+
+.container {
+    z-index: 5;
+    height: 100%;
+    width: 100%
+}
+
+.game-description{
+    border: 2px solid white;
+    background-color: rgba(94, 92, 92, 0.632);
+    color: white;
+    margin: 2px auto;
+    width: 40%;
+    position: absolute;
+    left: 29%;
+    top: 35%;
+    padding: 1%;
+    text-align: center;
+    line-height: 1.5em;
+}
+.gameboard{
+    border: 2px solid white;
+    background-color: rgba(94, 92, 92, 0.632);
+    color: white;
+    margin: 2px auto;
+    width: 15%;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    padding: 1%;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.user-score {
+    border: 2px solid white;
+    background-color: rgba(94, 92, 92, 0.632);
+    color: white;
+    margin: 2px auto;
+    width: 15%;
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    padding: 1%;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.image-sizer {
+    width: 135px;
+    height: 135px;
+
+}
+
+
+.crystal1 {
+    position: absolute;
+    top: 81%;
+    right: 9.5%;
+    transition: 2s;
+    transition-timing-function: linear;
+}
+.crystal2 {
+    position: absolute;
+    top: 11%;
+    right: 10%;
+    transition: top 2s;
+    transition-timing-function: linear;
+}
+.crystal3 {
+    position: absolute;
+    top: 10%;
+    left: 11%;
+    transition: top 2s;
+    transition-timing-function: linear;
+}
+.crystal4 {
+    position: absolute;
+    top: 81%;
+    left: 12%;
+    transition: 2s;
+    transition-timing-function: linear;
+}
+.crystal1:hover {
+    position: absolute;
+    top: 75%;
+    right: 10%;
+    transition: 2s;
+}
+.crystal2:hover {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    transition: top 2s;
+}
+.crystal3:hover {
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    transition: top 2s;
+}
+.crystal4:hover{
+    position: absolute;
+    top: 75%;
+    left: 12%;
+    transition: 2s;  
+}

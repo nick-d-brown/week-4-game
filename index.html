@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Crystals Collector</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <div class="cave-border"></div>
+    <!-- <img src="./assets/images/caveBorder.png" alt="Cave stalagmite and stalactite border." class="cave-border"> -->
     <div class="container">
-        <h1>Crystals Collector!</h1>
         <div class="game-description">
+            <h1>Crystals Collector!</h1>
             <h2>
                 Game Rules and description:
             </h2>
@@ -29,20 +33,21 @@
         </div>
         <div class="gameboard">
             <div class="random-number">
+                <h2>The random number is:</h2>
                 <p><span id="randomNumber"></span></p>
             </div>
-            <div class="scoreboard">
-                <p class="wins"><span id="wins"></span></p>
-                <p class="losses"><span id="losses"></span></p>
-            </div>
         </div>
-        <img src="###" alt="crystal1">
-        <img src="###" alt="crystal2">
-        <img src="###" alt="crystal3">
-        <img src="###" alt="crystal4">
+        <img src="./assets/images/blueCrystal.png" alt="crystal1" class="image-sizer crystal1">
+        <img src="./assets/images/greenCrystal.png" alt="crystal2" class="image-sizer crystal2">
+        <img src="./assets/images/yellowCrystal.png" alt="crystal3" class="image-sizer crystal3">
+        <img src="./assets/images/redCrystal.png" alt="crystal4" class="image-sizer crystal4">
         <div class="user-score">
             <p>Your Score is: </p>
             <p><span id="userScore"></span></p>
+            <div class="scoreboard">
+                <p class="wins">Wins: <span id="wins"></span></p>
+                <p class="losses">Losses: <span id="losses"></span></p>
+            </div>
         </div>
 
     </div>
