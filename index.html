@@ -29,28 +29,30 @@
             <p>
                 At the start of every new game a new random number will be chosen and the values of each crystal will be changed. 
             </p>
-            <h2>Good Luck!  </h2>
+            <p>Good Luck!</p>
+        
         </div>
         <div class="gameboard">
             <div class="random-number">
                 <h2>The random number is:</h2>
-                <p><span id="randomNumber"></span></p>
+                <h2><span id="randomNumber"></span></h2>
             </div>
         </div>
-        <img src="./assets/images/blueCrystal.png" alt="crystal1" class="image-sizer crystal1">
-        <img src="./assets/images/greenCrystal.png" alt="crystal2" class="image-sizer crystal2">
-        <img src="./assets/images/yellowCrystal.png" alt="crystal3" class="image-sizer crystal3">
-        <img src="./assets/images/redCrystal.png" alt="crystal4" class="image-sizer crystal4">
+        <img src="./assets/images/blueCrystal.png" alt="crystal1" class="image-sizer crystal1" id="crystal1">
+        <img src="./assets/images/greenCrystal.png" alt="crystal2" class="image-sizer crystal2" id="crystal2">
+        <img src="./assets/images/yellowCrystal.png" alt="crystal3" class="image-sizer crystal3" id="crystal3">
+        <img src="./assets/images/redCrystal.png" alt="crystal4" class="image-sizer crystal4" id="crystal4">
         <div class="user-score">
-            <p>Your Score is: </p>
-            <p><span id="userScore"></span></p>
+            <h2>Your Score is: </h2>
+            <h2><span id="userScore"></span></h2>
             <div class="scoreboard">
-                <p class="wins">Wins: <span id="wins"></span></p>
-                <p class="losses">Losses: <span id="losses"></span></p>
+                <h2 class="wins">Wins: <span id="wins"></span></h2>
+                <h2 class="losses">Losses: <span id="losses"></span></h2>
             </div>
         </div>
 
     </div>
-    
+    <script type="text/javascript" src="./assets/javascript/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
 </body>
 </html>
