@@ -32,6 +32,10 @@ h2, h3, h4, h5, h6 {
 
 .game-description{
     border: 2px solid white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 0;
     background-color: rgba(94, 92, 92, 0.632);
     color: white;
     margin: 2px auto;
@@ -43,6 +47,18 @@ h2, h3, h4, h5, h6 {
     text-align: center;
     line-height: 1.5em;
 }
+
+button {
+    text-align: center;
+    border-radius: 6px;
+}
+
+button:hover {
+    transition: all 150ms linear;
+    opacity: .85;
+    cursor: pointer;
+}
+
 .gameboard{
     border: 2px solid white;
     background-color: rgba(94, 92, 92, 0.632);
@@ -111,22 +127,26 @@ h2, h3, h4, h5, h6 {
     top: 75%;
     right: 10%;
     transition: 2s;
+    cursor: pointer;
 }
 .crystal2:hover {
     position: absolute;
     top: 15%;
     right: 10%;
     transition: top 2s;
+    cursor: pointer;
 }
 .crystal3:hover {
     position: absolute;
     top: 15%;
     left: 11%;
     transition: top 2s;
+    cursor: pointer;
 }
 .crystal4:hover{
     position: absolute;
     top: 75%;
     left: 12%;
     transition: 2s;  
+    cursor: pointer;
 }
