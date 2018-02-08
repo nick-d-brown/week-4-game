@@ -6,12 +6,16 @@ body {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 2.0em;
     text-decoration: underline;
+    text-shadow: 0 0 12px rgb(252, 252, 252);
+    text-shadow: 0 0 10px rgb(0, 208, 255);
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 h2, h3, h4, h5, h6 {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .cave-border {
@@ -30,7 +34,7 @@ h2, h3, h4, h5, h6 {
     width: 100%
 }
 
-.game-description{
+.game-description-container{
     border: 2px solid white;
     border-top-left-radius: 20px;
     border-top-right-radius: 0;
@@ -44,13 +48,23 @@ h2, h3, h4, h5, h6 {
     left: 29%;
     top: 35%;
     padding: 1%;
-    text-align: center;
+    text-align: justify;
     line-height: 1.5em;
+    
+    text-justify: inter-word;
 }
 
-button {
+.game-description-title {
+    margin-bottom: 15px;
+}
+
+.game-description {
+    margin-bottom: 15px;
+}
+
+.good-luck {
     text-align: center;
-    border-radius: 6px;
+    font-size: 1.5em;
 }
 
 button:hover {

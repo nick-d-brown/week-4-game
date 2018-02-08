@@ -1,8 +1,4 @@
 
-
-// looking at using THIS for repetitve lines
-
-
 $(document).ready(function () {
 
     // variables
@@ -43,15 +39,6 @@ $(document).ready(function () {
                 }
                 randomValueArr.push(randomValue);
             }
-            // else {randomValuePicker()}
-
-            // if (randomValueArr.includes(randomValue)) {
-            //     randomValue = randomNum(1, 12);
-            //     randomValueArr.push(randomValue);
-            // }
-            // else {
-            //     randomValueArr.push(randomValue);
-            // }
         }
        
         $("#crystal1").attr("data-crystalvalue", randomValueArr[0]);
@@ -75,139 +62,26 @@ $(document).ready(function () {
     // starts the game when called
     function gameStart() {
      reset();
-    // randomNumberPicker();
-    // randomValuePicker();
 
         // thses lines are adding the data value of each gem to the userScore when clicked
 
         $(".image-sizer").on("click", function () {
-           
             if (userScore < randomNumber) {
                 var gemValue = $(this).attr("data-crystalvalue")
                 gemValue = parseInt(gemValue, 10);
                 userScore += gemValue;
                 $("#userScore").text(userScore);
-
-                if (userScore === randomNumber) {
-                    reset();
+                if (userScore < randomNumber){}
+                else if (userScore === randomNumber) {
                     wins++;
-
-                    // gameStart();
+                    reset();
                 }
                 else if (userScore > randomNumber) {
-                    reset();
                     losses++;
-
-                    // gameStart();
+                    reset();
                 }
-            } 
-        //    else if (userScore === randomNumber) {
-        //         reset();
-        //         wins++;
-
-        //         // gameStart();
-        //     }
-        //     else if (userScore > randomNumber) {
-        //         reset();
-        //         losses++;
-
-        //         // gameStart();
-        //     }
-
-
-            // if (userScore === randomNumber) {
-            //     reset();
-            //     wins++;
-                
-            //     // gameStart();
-            // }
-            // else if (userScore > randomNumber) {
-            //     reset();
-            //     losses++;
-                
-            //     // gameStart();
-            // }
-            // else if (userScore < randomNumber) {
-            //     var gemValue = $(this).attr("data-crystalvalue")
-            //     gemValue = parseInt(gemValue, 10);
-            //     userScore += gemValue;
-            //     $("#userScore").text(userScore);
-            //     }          
+            }       
         });
- 
-        console.log(randomNumber);
-        console.log(randomValueArr);
-        console.log(userScore);
     }
     gameStart();
 });
-
-
-
-
-
-// $("#crystal1").on("click", function () {
-
-        //     var gemValue = $(this).attr("data-crystalvalue")
-        //     gemValue = parseInt(gemValue, 10);
-        //     userScore += gemValue;
-        //     $("#userScore").text(userScore);
-        //     if (userScore === randomNumber) {
-        //         wins++;
-        //         reset();
-        //         gameStart(); //can you run a function within itself??
-        //     }
-        //     else if (userScore > randomNumber) {
-        //         losses++;
-        //         reset();
-        //         gameStart(); //same guestion as above
-        //     }
-        // });
-        // $("#crystal2").on("click", function () {
-        //     var gemValue = ($(this).attr("data-crystalvalue"));
-        //     gemValue = parseInt(gemValue, 10);
-        //     userScore += gemValue;
-        //     $("#userScore").text(userScore);
-        //     if (userScore === randomNumber) {
-        //         wins++;
-        //         reset();
-        //         gameStart(); //can you run a function within itself??
-        //     }
-        //     else if (userScore > randomNumber) {
-        //         losses++;
-        //         reset();
-        //         gameStart(); //same guestion as above
-        //     }
-        // });
-        // $("#crystal3").on("click", function () {
-        //     var gemValue = ($(this).attr("data-crystalvalue"));
-        //     gemValue = parseInt(gemValue, 10);
-        //     userScore += gemValue;
-        //     $("#userScore").text(userScore);
-        //     if (userScore === randomNumber) {
-        //         wins++;
-        //         reset();
-        //         gameStart(); //can you run a function within itself??
-        //     }
-        //     else if (userScore > randomNumber) {
-        //         losses++;
-        //         reset();
-        //         gameStart(); //same guestion as above
-        //     }
-        // });
-        // $("#crystal4").on("click", function () {
-        //     var gemValue = ($(this).attr("data-crystalvalue"));
-        //     gemValue = parseInt(gemValue, 10);
-        //     userScore += gemValue;
-        //     $("#userScore").text(userScore);
-        //     if (userScore === randomNumber) {
-        //         wins++;
-        //         reset();
-        //         gameStart(); //can you run a function within itself??
-        //     }
-        //     else if (userScore > randomNumber) {
-        //         losses++;
-        //         reset();
-        //         gameStart(); //same guestion as above
-        //     }
-        // });
